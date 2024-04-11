@@ -25,7 +25,7 @@ for i, col in enumerate(numerical_columns.columns):
 plt.tight_layout()  # Adjust spacing between subplots
 plt.show()
 st.pyplot(fig)
-# Assuming you have a DataFrame nameud 'data' with numerical columns
+
 numerical_columns = df.select_dtypes(include='number')
 
 fig1 = plt.figure(figsize=(18, 12))
