@@ -4,9 +4,10 @@ import matplotlib.pyplot as plt # dataviz
 import seaborn as sns
 import streamlit as st
 
-df1 = pd.read_csv('C:\\Users\\USER\\Downloads\\immo1.csv')
-df = pd.read_csv('C:\\Users\\USER\\Downloads\\immo3.csv')
-
+#df1 = pd.read_csv('C:\\Users\\USER\\Downloads\\immo1.csv')
+#df = pd.read_csv('C:\\Users\\USER\\Downloads\\immo3.csv')
+url = "https://raw.githubusercontent.com/Jerin-T/streamlit/main/immo3.csv"
+df = pd.read_csv(url, index_col=0)
 
 # Assuming you have a DataFrame named 'data' with numerical columns
 numerical_columns = df.select_dtypes(include='number')
