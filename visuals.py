@@ -57,14 +57,14 @@ sns.set_style("whitegrid")
 
 
 # 2. Box plot for comparing livingSpace across typeOfFlat
-fig3 = plt.figure(figsize=(10, 6))
+fig3 = plt.figure(figsize=(12, 6))
 sns.boxplot(x='typeOfFlat', y='livingSpace', data=df)
 plt.title('Living Space by Type of Flat')
 plt.show()
 st.pyplot(fig3)
 
 # 3. Scatter plot between livingSpace and baseRent
-fig4 = plt.figure(figsize=(10, 6))
+fig4 = plt.figure(figsize=(12, 6))
 sns.scatterplot(x='livingSpace', y='baseRent', data=df)
 plt.title('Base Rent vs. Living Space')
 plt.show()
@@ -84,7 +84,7 @@ st.pyplot(fig4)
 # st.pyplot(fig6)
 
 # 6. Violin plot for totalRent across region
-fig7 = plt.figure(figsize=(12, 8))
+fig7 = plt.figure(figsize=(12, 6))
 sns.violinplot(x='regio1', y='totalRent', data=df)
 plt.title('Total Rent by Region')
 plt.show()
